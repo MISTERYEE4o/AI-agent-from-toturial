@@ -56,8 +56,8 @@ try:
         structured_response = parser.parse(json.dumps(parsed_data))
         print("Structured Response:", structured_response)
     else:
-        print("⚠️ Warning: Output is not valid JSON:", output_text)
+        print(" Warning: Output is not valid JSON:", output_text)
 except json.JSONDecodeError as jde:
     print("Error parsing JSON:", jde)
 except Exception as e:
-    print("❌ Error parsing response:", e, "\n🔹 Raw Response -", raw_response)
+    print(" Error parsing response:", e, "\n🔹 Raw Response -", raw_response)
